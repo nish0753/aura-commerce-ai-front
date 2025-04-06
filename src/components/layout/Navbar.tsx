@@ -34,6 +34,22 @@ const Navbar = () => {
             <Link to="/new" className="text-gray-700 hover:text-teal transition-colors">
               New Arrivals
             </Link>
+            <div className="relative group">
+              <span className="text-gray-700 hover:text-teal transition-colors cursor-pointer">
+                Experience
+              </span>
+              <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <Link to="/ai-recommendations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-teal">
+                  AI Recommendations
+                </Link>
+                <Link to="/outfit-matcher" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-teal">
+                  Outfit Matcher
+                </Link>
+                <Link to="/style-insights" className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent hover:text-teal">
+                  Style Insights
+                </Link>
+              </div>
+            </div>
           </nav>
 
           {/* Action Icons */}
@@ -90,6 +106,18 @@ const Navbar = () => {
             <Link to="/new" className="block text-gray-700 hover:text-teal transition-colors">
               New Arrivals
             </Link>
+            <div className="pt-2 border-t border-gray-100">
+              <p className="font-medium text-gray-700 mb-2">Experience</p>
+              <Link to="/ai-recommendations" className="block pl-3 py-1 text-gray-700 hover:text-teal transition-colors">
+                AI Recommendations
+              </Link>
+              <Link to="/outfit-matcher" className="block pl-3 py-1 text-gray-700 hover:text-teal transition-colors">
+                Outfit Matcher
+              </Link>
+              <Link to="/style-insights" className="block pl-3 py-1 text-gray-700 hover:text-teal transition-colors">
+                Style Insights
+              </Link>
+            </div>
             <div className="flex space-x-4 pt-2 border-t border-gray-100">
               <button aria-label="Search" className="text-gray-700 hover:text-teal transition-colors">
                 <Search size={20} />

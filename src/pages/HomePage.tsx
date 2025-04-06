@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import ProductGrid from '../components/product/ProductGrid';
@@ -250,35 +249,41 @@ const HomePage = () => {
           <h2 className="text-3xl font-heading font-semibold mb-12 text-center">The Aura Experience</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="text-teal" size={24} />
+            <Link to="/ai-recommendations" className="group">
+              <div className="text-center p-6 rounded-lg transition-all hover:bg-accent/20">
+                <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal/20 transition-colors">
+                  <Sparkles className="text-teal" size={24} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">AI-Powered Recommendations</h3>
+                <p className="text-gray-600">
+                  Our advanced AI understands your unique style preferences and recommends products you'll love.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">AI-Powered Recommendations</h3>
-              <p className="text-gray-600">
-                Our advanced AI understands your unique style preferences and recommends products you'll love.
-              </p>
-            </div>
+            </Link>
             
-            <div className="text-center">
-              <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="text-teal" size={24} />
+            <Link to="/outfit-matcher" className="group">
+              <div className="text-center p-6 rounded-lg transition-all hover:bg-accent/20">
+                <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal/20 transition-colors">
+                  <Zap className="text-teal" size={24} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Virtual Outfit Matcher</h3>
+                <p className="text-gray-600">
+                  See how items pair together with our smart outfit matcher. Build your perfect look effortlessly.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Virtual Outfit Matcher</h3>
-              <p className="text-gray-600">
-                See how items pair together with our smart outfit matcher. Build your perfect look effortlessly.
-              </p>
-            </div>
+            </Link>
             
-            <div className="text-center">
-              <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <LineChart className="text-teal" size={24} />
+            <Link to="/style-insights" className="group">
+              <div className="text-center p-6 rounded-lg transition-all hover:bg-accent/20">
+                <div className="bg-accent/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal/20 transition-colors">
+                  <LineChart className="text-teal" size={24} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Style Insights</h3>
+                <p className="text-gray-600">
+                  Gain insights into your style preferences and discover new trends that match your taste.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Style Insights</h3>
-              <p className="text-gray-600">
-                Gain insights into your style preferences and discover new trends that match your taste.
-              </p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

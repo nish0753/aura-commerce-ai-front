@@ -9,6 +9,9 @@ import RecommendationsPage from "./pages/RecommendationsPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
+import AiRecommendationsPage from "./pages/AiRecommendationsPage";
+import OutfitMatcherPage from "./pages/OutfitMatcherPage";
+import StyleInsightsPage from "./pages/StyleInsightsPage";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +26,9 @@ const App = () => (
           <Route path="/recommendations" element={<RecommendationsPage />} />
           <Route path="/product/:id" element={<ProductDetailPage />} />
           <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/ai-recommendations" element={<AiRecommendationsPage />} />
+          <Route path="/outfit-matcher" element={<OutfitMatcherPage />} />
+          <Route path="/style-insights" element={<StyleInsightsPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
